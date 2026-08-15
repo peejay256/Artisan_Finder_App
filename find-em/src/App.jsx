@@ -8,9 +8,19 @@ function App() {
 
   return (
     <>
-      <h1>Find'em</h1>
+    <nav>
+      <div>Find'em</div>
+      <div className='navbar-links'>
+        <a href="#">Home</a>
+        <a href="#">Find an Artisan</a>
+        <a href="#">How it works</a>
+        <a href="#">Login</a>
+        <a href="#">Sign up</a>
+      </div>
+    </nav>
+      {/* <h1>Find'em</h1>
       <p>Find trusted artisans near you</p>
-      <button>Find an Artisan</button>
+      <button>Find an Artisan</button> */}
     </>
   )
 }
