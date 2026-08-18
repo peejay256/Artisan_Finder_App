@@ -14,16 +14,33 @@ function App() {
           <a href="#">Sign up</a>
         </div>
       </nav>
-      <section>
-        <div className="hero-text">
+      {/* Hero section */}
+      <section className="hero">
+        <div className="hero-text-container">
           <h1>Find trusted artisans near you</h1>
           <p>Connect with skilled professionals for the job you need done.</p>
-          <button>Find an Artisan</button>
+          <div className="search-box">
+            <input
+              type="text"
+              name="text"
+              placeholder="What service do you need help with?"
+            />
+            <input
+              type="text"
+              name="text"
+              placeholder="Where is your location?"
+            />
+            <button>Find an Artisan</button>
+          </div>
         </div>
         <div className="hero-image-container">
-          <img src={heroImg} alt="hero image showing different artisans from electrician to plumber to carpenter to tailor"/>
+          <img
+            src={heroImg}
+            alt="hero image showing different artisans from electrician to plumber to carpenter to tailor"
+          />
         </div>
       </section>
+      
     </>
   );
 }
