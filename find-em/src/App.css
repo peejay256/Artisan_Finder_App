@@ -4,17 +4,19 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
+  height: 40px;
 }
 .navbar-links {
   display: flex;
   gap: 20px;
 }
 .hero {
-  background: linear-gradient(135deg, #f4fbf6 0%, #e8f5ec 55%, #f8fbf9 100%);
+  background: linear-gradient(135deg, #6cf527 0%, #764ba2 100%);
   display: flex;
   align-items: center;
-  padding: 50px 40px;
+  padding: 60px 40px;
   border-bottom: 1px solid #eee;
 }
 .hero-text-container {
@@ -60,8 +62,22 @@ button:hover {
   height: auto;
   border-radius: 25px;
 }
-
-
+.how-it-works-container {
+  display: flex;
+  gap: 20px;
+}
+.how-it-works {
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f4fbf6;
+  border: 1px solid #d5e3d8;
+  transition: 0.2s;
+}
+.how-it-works:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
 
 @media (max-width: 768px) {
   .navbar-links {

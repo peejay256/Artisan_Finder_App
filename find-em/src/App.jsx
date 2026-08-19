@@ -14,6 +14,7 @@ function App() {
           <a href="#">Sign up</a>
         </div>
       </nav>
+
       {/* Hero section */}
       <section className="hero">
         <div className="hero-text-container">
@@ -40,7 +41,29 @@ function App() {
           />
         </div>
       </section>
-      
+
+      {/* How it works section */}
+      <section className="how-it-works-section">
+        <h2>How Find'em works</h2>
+
+        <div className="how-it-works-container">
+          <div className="how-it-works">
+            <span>🔎</span>
+            <h3>Search</h3>
+            <p>Tell us what service you need.</p>
+          </div>
+          <div className="how-it-works">
+            <span>👤</span>
+            <h3>Choose</h3>
+            <p>Browse artisans and choose one you trust.</p>
+          </div>
+          <div className="how-it-works">
+            <span>📅</span>
+            <h3>Book</h3>
+            <p>Contact or book your chosen artisan.</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
