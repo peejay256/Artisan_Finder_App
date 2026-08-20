@@ -1,7 +1,18 @@
 import "./App.css";
 import heroImg from "./assets/hero.png";
+import CategoryCard from "./components/category-cards";
 
 function App() {
+  const categories = [
+    { id: 1, icon: "⚡", name: "Electrician" },
+    { id: 2, icon: "🔧", name: "Plumber" },
+    { id: 3, icon: "🪚", name: "Carpenter" },
+    { id: 4, icon: "🧵", name: "Tailor" },
+    { id: 5, icon: "🏠", name: "Painter" },
+    { id: 6, icon: "🧑‍🔧", name: "Mechanic" },
+    { id: 7, icon: "🧹", name: "Cleaner" },
+  ];
+  
   return (
     <>
       <nav>
@@ -62,6 +73,19 @@ function App() {
             <h3>Book</h3>
             <p>Contact or book your chosen artisan.</p>
           </div>
+        </div>
+      </section>
+      <section className="categories-section">
+        <h2>Find an artisan for any job</h2>
+
+        <div className="categories-container">
+          {categories.map((category) => (
+            <CategoryCard
+              key={category.id}
+              icon={category.icon}
+              name={category.name}
+            />
+          ))}
         </div>
       </section>
     </>

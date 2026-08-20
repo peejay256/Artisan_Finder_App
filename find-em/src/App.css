@@ -78,6 +78,27 @@ button:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
+h2 {
+  padding: 20px;
+}
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.category-card {
+  flex: 1 1 200px;
+  padding: 25px;
+  border: 1px solid #d5e3d8;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f4fbf6;
+  transition: 0.2s;
+}
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 768px) {
   .navbar-links {
